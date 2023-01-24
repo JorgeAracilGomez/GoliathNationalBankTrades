@@ -16,6 +16,11 @@
 		9634F4632980584C004AA66F /* GoliathNationalBankTradesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4622980584C004AA66F /* GoliathNationalBankTradesUITests.swift */; };
 		9634F4652980584C004AA66F /* GoliathNationalBankTradesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4642980584C004AA66F /* GoliathNationalBankTradesUITestsLaunchTests.swift */; };
 		9634F47929805CC7004AA66F /* Boxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F47829805CC7004AA66F /* Boxing.swift */; };
+		9634F47B29806C64004AA66F /* GNBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F47A29806C64004AA66F /* GNBEndpoint.swift */; };
+		9634F47E298070DD004AA66F /* GNBCurrencyRates+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F47D298070DD004AA66F /* GNBCurrencyRates+Decodable.swift */; };
+		9634F48029807294004AA66F /* GNBProductTransaction+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F47F29807294004AA66F /* GNBProductTransaction+Decodable.swift */; };
+		9634F4832980745C004AA66F /* GNBCurrencyRates+Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4822980745C004AA66F /* GNBCurrencyRates+Entity.swift */; };
+		9634F4852980746D004AA66F /* GNBProductTransaction+Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4842980746D004AA66F /* GNBProductTransaction+Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		9634F4622980584C004AA66F /* GoliathNationalBankTradesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankTradesUITests.swift; sourceTree = "<group>"; };
 		9634F4642980584C004AA66F /* GoliathNationalBankTradesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankTradesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9634F47829805CC7004AA66F /* Boxing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxing.swift; sourceTree = "<group>"; };
+		9634F47A29806C64004AA66F /* GNBEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBEndpoint.swift; sourceTree = "<group>"; };
+		9634F47D298070DD004AA66F /* GNBCurrencyRates+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrencyRates+Decodable.swift"; sourceTree = "<group>"; };
+		9634F47F29807294004AA66F /* GNBProductTransaction+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductTransaction+Decodable.swift"; sourceTree = "<group>"; };
+		9634F4822980745C004AA66F /* GNBCurrencyRates+Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrencyRates+Entity.swift"; sourceTree = "<group>"; };
+		9634F4842980746D004AA66F /* GNBProductTransaction+Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductTransaction+Entity.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,7 @@
 				9634F47329805B69004AA66F /* Presentation */,
 				9634F47429805BBB004AA66F /* Resources */,
 				9634F44F2980584C004AA66F /* Info.plist */,
+				9634F47A29806C64004AA66F /* GNBEndpoint.swift */,
 			);
 			path = GoliathNationalBankTrades;
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 		9634F47129805B59004AA66F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9634F47C29807086004AA66F /* Decodables */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -136,6 +148,7 @@
 		9634F47229805B60004AA66F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				9634F48129807447004AA66F /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -181,6 +194,24 @@
 			children = (
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		9634F47C29807086004AA66F /* Decodables */ = {
+			isa = PBXGroup;
+			children = (
+				9634F47D298070DD004AA66F /* GNBCurrencyRates+Decodable.swift */,
+				9634F47F29807294004AA66F /* GNBProductTransaction+Decodable.swift */,
+			);
+			path = Decodables;
+			sourceTree = "<group>";
+		};
+		9634F48129807447004AA66F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9634F4822980745C004AA66F /* GNBCurrencyRates+Entity.swift */,
+				9634F4842980746D004AA66F /* GNBProductTransaction+Entity.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,9 +344,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9634F48029807294004AA66F /* GNBProductTransaction+Decodable.swift in Sources */,
+				9634F4832980745C004AA66F /* GNBCurrencyRates+Entity.swift in Sources */,
 				9634F4462980584B004AA66F /* ViewController.swift in Sources */,
 				9634F4422980584B004AA66F /* AppDelegate.swift in Sources */,
+				9634F47E298070DD004AA66F /* GNBCurrencyRates+Decodable.swift in Sources */,
 				9634F47929805CC7004AA66F /* Boxing.swift in Sources */,
+				9634F47B29806C64004AA66F /* GNBEndpoint.swift in Sources */,
+				9634F4852980746D004AA66F /* GNBProductTransaction+Entity.swift in Sources */,
 				9634F4442980584B004AA66F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
