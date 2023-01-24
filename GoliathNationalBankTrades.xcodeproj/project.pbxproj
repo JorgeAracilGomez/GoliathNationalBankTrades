@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9634F4422980584B004AA66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4412980584B004AA66F /* AppDelegate.swift */; };
+		9634F4442980584B004AA66F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4432980584B004AA66F /* SceneDelegate.swift */; };
+		9634F4462980584B004AA66F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4452980584B004AA66F /* ViewController.swift */; };
+		9634F44B2980584C004AA66F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9634F44A2980584C004AA66F /* Assets.xcassets */; };
+		9634F44E2980584C004AA66F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9634F44C2980584C004AA66F /* LaunchScreen.storyboard */; };
+		9634F4592980584C004AA66F /* GoliathNationalBankTradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4582980584C004AA66F /* GoliathNationalBankTradesTests.swift */; };
+		9634F4632980584C004AA66F /* GoliathNationalBankTradesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4622980584C004AA66F /* GoliathNationalBankTradesUITests.swift */; };
+		9634F4652980584C004AA66F /* GoliathNationalBankTradesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4642980584C004AA66F /* GoliathNationalBankTradesUITestsLaunchTests.swift */; };
+		9634F47929805CC7004AA66F /* Boxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F47829805CC7004AA66F /* Boxing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9634F4552980584C004AA66F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9634F4362980584A004AA66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9634F43D2980584A004AA66F;
+			remoteInfo = GoliathNationalBankTrades;
+		};
+		9634F45F2980584C004AA66F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9634F4362980584A004AA66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9634F43D2980584A004AA66F;
+			remoteInfo = GoliathNationalBankTrades;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9634F43E2980584A004AA66F /* GoliathNationalBankTrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoliathNationalBankTrades.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9634F4412980584B004AA66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9634F4432980584B004AA66F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9634F4452980584B004AA66F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9634F44A2980584C004AA66F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9634F44D2980584C004AA66F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9634F44F2980584C004AA66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9634F4542980584C004AA66F /* GoliathNationalBankTradesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoliathNationalBankTradesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9634F4582980584C004AA66F /* GoliathNationalBankTradesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankTradesTests.swift; sourceTree = "<group>"; };
+		9634F45E2980584C004AA66F /* GoliathNationalBankTradesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoliathNationalBankTradesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9634F4622980584C004AA66F /* GoliathNationalBankTradesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankTradesUITests.swift; sourceTree = "<group>"; };
+		9634F4642980584C004AA66F /* GoliathNationalBankTradesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoliathNationalBankTradesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9634F47829805CC7004AA66F /* Boxing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boxing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9634F43B2980584A004AA66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9634F4512980584C004AA66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9634F45B2980584C004AA66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9634F4352980584A004AA66F = {
+			isa = PBXGroup;
+			children = (
+				9634F4402980584B004AA66F /* GoliathNationalBankTrades */,
+				9634F4572980584C004AA66F /* GoliathNationalBankTradesTests */,
+				9634F4612980584C004AA66F /* GoliathNationalBankTradesUITests */,
+				9634F43F2980584A004AA66F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9634F43F2980584A004AA66F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9634F43E2980584A004AA66F /* GoliathNationalBankTrades.app */,
+				9634F4542980584C004AA66F /* GoliathNationalBankTradesTests.xctest */,
+				9634F45E2980584C004AA66F /* GoliathNationalBankTradesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9634F4402980584B004AA66F /* GoliathNationalBankTrades */ = {
+			isa = PBXGroup;
+			children = (
+				9634F47529805BE1004AA66F /* Base */,
+				9634F47129805B59004AA66F /* Data */,
+				9634F47229805B60004AA66F /* Domain */,
+				9634F47329805B69004AA66F /* Presentation */,
+				9634F47429805BBB004AA66F /* Resources */,
+				9634F44F2980584C004AA66F /* Info.plist */,
+			);
+			path = GoliathNationalBankTrades;
+			sourceTree = "<group>";
+		};
+		9634F4572980584C004AA66F /* GoliathNationalBankTradesTests */ = {
+			isa = PBXGroup;
+			children = (
+				9634F4582980584C004AA66F /* GoliathNationalBankTradesTests.swift */,
+			);
+			path = GoliathNationalBankTradesTests;
+			sourceTree = "<group>";
+		};
+		9634F4612980584C004AA66F /* GoliathNationalBankTradesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9634F4622980584C004AA66F /* GoliathNationalBankTradesUITests.swift */,
+				9634F4642980584C004AA66F /* GoliathNationalBankTradesUITestsLaunchTests.swift */,
+			);
+			path = GoliathNationalBankTradesUITests;
+			sourceTree = "<group>";
+		};
+		9634F47129805B59004AA66F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9634F47229805B60004AA66F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9634F47329805B69004AA66F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9634F47629805C26004AA66F /* Coordinator */,
+				9634F47729805C2E004AA66F /* Features */,
+				9634F4452980584B004AA66F /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9634F47429805BBB004AA66F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9634F44A2980584C004AA66F /* Assets.xcassets */,
+				9634F44C2980584C004AA66F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9634F47529805BE1004AA66F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9634F4412980584B004AA66F /* AppDelegate.swift */,
+				9634F4432980584B004AA66F /* SceneDelegate.swift */,
+				9634F47829805CC7004AA66F /* Boxing.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9634F47629805C26004AA66F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9634F47729805C2E004AA66F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9634F43D2980584A004AA66F /* GoliathNationalBankTrades */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9634F4682980584C004AA66F /* Build configuration list for PBXNativeTarget "GoliathNationalBankTrades" */;
+			buildPhases = (
+				9634F43A2980584A004AA66F /* Sources */,
+				9634F43B2980584A004AA66F /* Frameworks */,
+				9634F43C2980584A004AA66F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoliathNationalBankTrades;
+			productName = GoliathNationalBankTrades;
+			productReference = 9634F43E2980584A004AA66F /* GoliathNationalBankTrades.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9634F4532980584C004AA66F /* GoliathNationalBankTradesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9634F46B2980584C004AA66F /* Build configuration list for PBXNativeTarget "GoliathNationalBankTradesTests" */;
+			buildPhases = (
+				9634F4502980584C004AA66F /* Sources */,
+				9634F4512980584C004AA66F /* Frameworks */,
+				9634F4522980584C004AA66F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9634F4562980584C004AA66F /* PBXTargetDependency */,
+			);
+			name = GoliathNationalBankTradesTests;
+			productName = GoliathNationalBankTradesTests;
+			productReference = 9634F4542980584C004AA66F /* GoliathNationalBankTradesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9634F45D2980584C004AA66F /* GoliathNationalBankTradesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9634F46E2980584C004AA66F /* Build configuration list for PBXNativeTarget "GoliathNationalBankTradesUITests" */;
+			buildPhases = (
+				9634F45A2980584C004AA66F /* Sources */,
+				9634F45B2980584C004AA66F /* Frameworks */,
+				9634F45C2980584C004AA66F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9634F4602980584C004AA66F /* PBXTargetDependency */,
+			);
+			name = GoliathNationalBankTradesUITests;
+			productName = GoliathNationalBankTradesUITests;
+			productReference = 9634F45E2980584C004AA66F /* GoliathNationalBankTradesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9634F4362980584A004AA66F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9634F43D2980584A004AA66F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					9634F4532980584C004AA66F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9634F43D2980584A004AA66F;
+					};
+					9634F45D2980584C004AA66F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9634F43D2980584A004AA66F;
+					};
+				};
+			};
+			buildConfigurationList = 9634F4392980584A004AA66F /* Build configuration list for PBXProject "GoliathNationalBankTrades" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9634F4352980584A004AA66F;
+			productRefGroup = 9634F43F2980584A004AA66F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9634F43D2980584A004AA66F /* GoliathNationalBankTrades */,
+				9634F4532980584C004AA66F /* GoliathNationalBankTradesTests */,
+				9634F45D2980584C004AA66F /* GoliathNationalBankTradesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9634F43C2980584A004AA66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9634F44E2980584C004AA66F /* LaunchScreen.storyboard in Resources */,
+				9634F44B2980584C004AA66F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9634F4522980584C004AA66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9634F45C2980584C004AA66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9634F43A2980584A004AA66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9634F4462980584B004AA66F /* ViewController.swift in Sources */,
+				9634F4422980584B004AA66F /* AppDelegate.swift in Sources */,
+				9634F47929805CC7004AA66F /* Boxing.swift in Sources */,
+				9634F4442980584B004AA66F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9634F4502980584C004AA66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9634F4592980584C004AA66F /* GoliathNationalBankTradesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9634F45A2980584C004AA66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9634F4652980584C004AA66F /* GoliathNationalBankTradesUITestsLaunchTests.swift in Sources */,
+				9634F4632980584C004AA66F /* GoliathNationalBankTradesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9634F4562980584C004AA66F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9634F43D2980584A004AA66F /* GoliathNationalBankTrades */;
+			targetProxy = 9634F4552980584C004AA66F /* PBXContainerItemProxy */;
+		};
+		9634F4602980584C004AA66F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9634F43D2980584A004AA66F /* GoliathNationalBankTrades */;
+			targetProxy = 9634F45F2980584C004AA66F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9634F44C2980584C004AA66F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9634F44D2980584C004AA66F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9634F4662980584C004AA66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9634F4672980584C004AA66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9634F4692980584C004AA66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B2GX9YW44;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoliathNationalBankTrades/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgearacilgomez.GoliathNationalBankTrades;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9634F46A2980584C004AA66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B2GX9YW44;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoliathNationalBankTrades/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgearacilgomez.GoliathNationalBankTrades;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9634F46C2980584C004AA66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B2GX9YW44;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgearacilgomez.GoliathNationalBankTradesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoliathNationalBankTrades.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoliathNationalBankTrades";
+			};
+			name = Debug;
+		};
+		9634F46D2980584C004AA66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B2GX9YW44;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgearacilgomez.GoliathNationalBankTradesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoliathNationalBankTrades.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoliathNationalBankTrades";
+			};
+			name = Release;
+		};
+		9634F46F2980584C004AA66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B2GX9YW44;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgearacilgomez.GoliathNationalBankTradesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoliathNationalBankTrades;
+			};
+			name = Debug;
+		};
+		9634F4702980584C004AA66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4B2GX9YW44;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorgearacilgomez.GoliathNationalBankTradesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoliathNationalBankTrades;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9634F4392980584A004AA66F /* Build configuration list for PBXProject "GoliathNationalBankTrades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9634F4662980584C004AA66F /* Debug */,
+				9634F4672980584C004AA66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9634F4682980584C004AA66F /* Build configuration list for PBXNativeTarget "GoliathNationalBankTrades" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9634F4692980584C004AA66F /* Debug */,
+				9634F46A2980584C004AA66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9634F46B2980584C004AA66F /* Build configuration list for PBXNativeTarget "GoliathNationalBankTradesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9634F46C2980584C004AA66F /* Debug */,
+				9634F46D2980584C004AA66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9634F46E2980584C004AA66F /* Build configuration list for PBXNativeTarget "GoliathNationalBankTradesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9634F46F2980584C004AA66F /* Debug */,
+				9634F4702980584C004AA66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9634F4362980584A004AA66F /* Project object */;
+}
