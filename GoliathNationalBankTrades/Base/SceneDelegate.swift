@@ -9,18 +9,20 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    var coordinator: MainCoordinator?
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         
-        let MISCOVC = ViewController()
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.prefersLargeTitles = true
+        coordinator = MainCoordinator(navigationController: navigationController)
+        coordinator?.start()
         
-        let window = UIWindow(windowScene: scene)
-        window.rootViewController = MISCOVC
-        window.makeKeyAndVisible()
-        self.window = window
+        window = UIWindow(windowScene: scene)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
