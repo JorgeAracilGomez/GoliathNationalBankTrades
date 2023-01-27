@@ -69,6 +69,7 @@
 		9634F5012983E941004AA66F /* GNBProductTransactionsUseCase+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5002983E941004AA66F /* GNBProductTransactionsUseCase+Test.swift */; };
 		9634F5032983EA0E004AA66F /* GNBProductTransactionsRepositoryFailure+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5022983EA0E004AA66F /* GNBProductTransactionsRepositoryFailure+Mock.swift */; };
 		9634F5052983EA87004AA66F /* GNBProductTransactionsRepositorySuccess+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5042983EA87004AA66F /* GNBProductTransactionsRepositorySuccess+Mock.swift */; };
+		9634F50A2983F956004AA66F /* GNBProductSelectionViewModel+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5092983F956004AA66F /* GNBProductSelectionViewModel+Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		9634F5002983E941004AA66F /* GNBProductTransactionsUseCase+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductTransactionsUseCase+Test.swift"; sourceTree = "<group>"; };
 		9634F5022983EA0E004AA66F /* GNBProductTransactionsRepositoryFailure+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductTransactionsRepositoryFailure+Mock.swift"; sourceTree = "<group>"; };
 		9634F5042983EA87004AA66F /* GNBProductTransactionsRepositorySuccess+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductTransactionsRepositorySuccess+Mock.swift"; sourceTree = "<group>"; };
+		9634F5092983F956004AA66F /* GNBProductSelectionViewModel+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductSelectionViewModel+Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				9634F4582980584C004AA66F /* GoliathNationalBankTradesTests.swift */,
 				9634F4F52983D8E0004AA66F /* Mock */,
 				9634F4F22983D828004AA66F /* Domain */,
+				9634F5062983F8ED004AA66F /* Presentation */,
 			);
 			path = GoliathNationalBankTradesTests;
 			sourceTree = "<group>";
@@ -590,6 +593,30 @@
 			path = RawData;
 			sourceTree = "<group>";
 		};
+		9634F5062983F8ED004AA66F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9634F5072983F912004AA66F /* Features */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9634F5072983F912004AA66F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9634F5082983F930004AA66F /* ProductSelection */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9634F5082983F930004AA66F /* ProductSelection */ = {
+			isa = PBXGroup;
+			children = (
+				9634F5092983F956004AA66F /* GNBProductSelectionViewModel+Test.swift */,
+			);
+			path = ProductSelection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -781,6 +808,7 @@
 				9634F4592980584C004AA66F /* GoliathNationalBankTradesTests.swift in Sources */,
 				9634F5012983E941004AA66F /* GNBProductTransactionsUseCase+Test.swift in Sources */,
 				9634F5032983EA0E004AA66F /* GNBProductTransactionsRepositoryFailure+Mock.swift in Sources */,
+				9634F50A2983F956004AA66F /* GNBProductSelectionViewModel+Test.swift in Sources */,
 				9634F4FD2983E34C004AA66F /* GNBCurrencyRatesList+Mock.swift in Sources */,
 				9634F4FF2983E820004AA66F /* GNBCurrencyRatesRepositoryFailure+Mock.swift in Sources */,
 				9634F4FB2983D9EA004AA66F /* GNBProductTransactionList+Mock.swift in Sources */,

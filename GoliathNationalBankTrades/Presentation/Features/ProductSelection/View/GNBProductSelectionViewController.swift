@@ -42,8 +42,6 @@ final class GNBProductSelectionViewController: GNBBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         setupBinding()
         setupView()
         self.viewModel.viewDidLoad()
