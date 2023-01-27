@@ -55,6 +55,11 @@ final class GNBProductSelectionViewModelTest: XCTestCase {
             expectation.fulfill()
         }
         
+        successViewModel?.error.bind { error in
+            guard let _ = error else { return }
+            XCTFail("Successfully test must not have an error when the usecase is executed")
+        }
+        
         successViewModel?.viewDidLoad()
         
         wait(for: [expectation], timeout: 10)
@@ -88,7 +93,6 @@ final class GNBProductSelectionViewModelTest: XCTestCase {
         successViewModel?.productDetailModel.bind { model in
             guard let model = model else { return }
             XCTAssertNotNil(model)
-            XCTAssertNotNil(model.sku)
             XCTAssertEqual(model.sku, "T108466")
             XCTAssertNotNil(model.transactions)
             
@@ -99,6 +103,11 @@ final class GNBProductSelectionViewModelTest: XCTestCase {
             }
             
             expectation.fulfill()
+        }
+        
+        successViewModel?.error.bind { error in
+            guard let _ = error else { return }
+            XCTFail("Successfully test must not have an error when the usecase is executed")
         }
         
         successViewModel?.viewDidLoad()

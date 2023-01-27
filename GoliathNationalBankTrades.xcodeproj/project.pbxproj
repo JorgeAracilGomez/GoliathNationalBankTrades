@@ -70,6 +70,7 @@
 		9634F5032983EA0E004AA66F /* GNBProductTransactionsRepositoryFailure+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5022983EA0E004AA66F /* GNBProductTransactionsRepositoryFailure+Mock.swift */; };
 		9634F5052983EA87004AA66F /* GNBProductTransactionsRepositorySuccess+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5042983EA87004AA66F /* GNBProductTransactionsRepositorySuccess+Mock.swift */; };
 		9634F50A2983F956004AA66F /* GNBProductSelectionViewModel+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5092983F956004AA66F /* GNBProductSelectionViewModel+Test.swift */; };
+		9634F50D2984183E004AA66F /* GNBProductDetailViewModel+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F50C2984183E004AA66F /* GNBProductDetailViewModel+Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		9634F5022983EA0E004AA66F /* GNBProductTransactionsRepositoryFailure+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductTransactionsRepositoryFailure+Mock.swift"; sourceTree = "<group>"; };
 		9634F5042983EA87004AA66F /* GNBProductTransactionsRepositorySuccess+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductTransactionsRepositorySuccess+Mock.swift"; sourceTree = "<group>"; };
 		9634F5092983F956004AA66F /* GNBProductSelectionViewModel+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductSelectionViewModel+Test.swift"; sourceTree = "<group>"; };
+		9634F50C2984183E004AA66F /* GNBProductDetailViewModel+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductDetailViewModel+Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -605,6 +607,7 @@
 			isa = PBXGroup;
 			children = (
 				9634F5082983F930004AA66F /* ProductSelection */,
+				9634F50B29841808004AA66F /* ProductDetail */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -615,6 +618,14 @@
 				9634F5092983F956004AA66F /* GNBProductSelectionViewModel+Test.swift */,
 			);
 			path = ProductSelection;
+			sourceTree = "<group>";
+		};
+		9634F50B29841808004AA66F /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9634F50C2984183E004AA66F /* GNBProductDetailViewModel+Test.swift */,
+			);
+			path = ProductDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -811,6 +822,7 @@
 				9634F50A2983F956004AA66F /* GNBProductSelectionViewModel+Test.swift in Sources */,
 				9634F4FD2983E34C004AA66F /* GNBCurrencyRatesList+Mock.swift in Sources */,
 				9634F4FF2983E820004AA66F /* GNBCurrencyRatesRepositoryFailure+Mock.swift in Sources */,
+				9634F50D2984183E004AA66F /* GNBProductDetailViewModel+Test.swift in Sources */,
 				9634F4FB2983D9EA004AA66F /* GNBProductTransactionList+Mock.swift in Sources */,
 				9634F4F82983D90F004AA66F /* GNBCurrencyRatesRepositorySuccess+Mock.swift in Sources */,
 			);

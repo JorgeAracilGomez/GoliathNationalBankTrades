@@ -15,7 +15,7 @@ final class GNBProductDetailViewController: GNBBaseViewController {
     private var viewModel: GNBProductDetailViewModel
     private var inputModel: GNBProductSelectionModel
     
-    init(viewModel: GNBProductDetailViewModel = DefaulGNBProductDetailViewModel(),
+    init(viewModel: GNBProductDetailViewModel = DefaultGNBProductDetailViewModel(),
          inputModel: GNBProductSelectionModel) {
         self.viewModel = viewModel
         self.inputModel = inputModel

@@ -12,7 +12,7 @@ import Foundation
 protocol GNBProductDetailViewModel: GNBProductDetailViewModelInput, GNBProductDetailViewModelOutput {}
 
 protocol GNBProductDetailViewModelInput {
-    func viewDidLoad(forInputModel inputModel: GNBProductSelectionModel)
+    func viewDidLoad(forInputModel inputModel: GNBProductSelectionModel?)
 }
 
 protocol GNBProductDetailViewModelOutput {
@@ -23,9 +23,9 @@ protocol GNBProductDetailViewModelOutput {
     
 }
 
-// MARK: DefaulGNBProductDetailViewModel
+// MARK: DefaultGNBProductDetailViewModel
 
-final class DefaulGNBProductDetailViewModel: GNBProductDetailViewModel {
+final class DefaultGNBProductDetailViewModel: GNBProductDetailViewModel {
     var inputModel: GNBProductSelectionModel?
     var currencyRatesUseCase: GNBCurrencyRatesUseCase
     var entity: GNBCurrencyRatesListEntity?
@@ -41,9 +41,9 @@ final class DefaulGNBProductDetailViewModel: GNBProductDetailViewModel {
 
 // MARK: Input methods
 
-extension DefaulGNBProductDetailViewModel {
+extension DefaultGNBProductDetailViewModel {
     
-    func viewDidLoad(forInputModel inputModel: GNBProductSelectionModel) {
+    func viewDidLoad(forInputModel inputModel: GNBProductSelectionModel?) {
         self.inputModel = inputModel
         fetchTransactionsData()
     }
@@ -51,7 +51,7 @@ extension DefaulGNBProductDetailViewModel {
 
 // MARK: Fetch Data
 
-extension DefaulGNBProductDetailViewModel {
+extension DefaultGNBProductDetailViewModel {
     
     func fetchTransactionsData() {
         
@@ -72,7 +72,7 @@ extension DefaulGNBProductDetailViewModel {
 
 // MARK: Mannage Output Models
 
-extension DefaulGNBProductDetailViewModel {
+extension DefaultGNBProductDetailViewModel {
     
     func createModel() {
         guard let inputModel = inputModel else {
