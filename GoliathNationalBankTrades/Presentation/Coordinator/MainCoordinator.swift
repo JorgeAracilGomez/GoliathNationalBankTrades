@@ -33,4 +33,10 @@ extension MainCoordinator {
         productSelectionViewController.coordinator = self
         navigationController.pushViewController(productSelectionViewController, animated: false)
     }
+    
+    func showProductDetail(withModel model: GNBProductSelectionModel) {
+        let productDetailViewController = GNBProductDetailViewController(inputModel: model)
+        productDetailViewController.coordinator = self
+        navigationController.pushViewController(productDetailViewController, animated: true)
+    }
 }

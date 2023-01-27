@@ -13,10 +13,10 @@ extension GNBProductSelectionViewController {
     
     func setupProductsTableViewConstraints() {
         NSLayoutConstraint.activate([
-            productsTableView.topAnchor.constraint(equalTo: self.view.safeTopAnchor),
-            productsTableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            productsTableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            productsTableView.bottomAnchor.constraint(equalTo: self.view.safeBottomAnchor),
+            productsTableView.topAnchor.constraint(equalTo: view.safeTopAnchor),
+            productsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            productsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            productsTableView.bottomAnchor.constraint(equalTo: view.safeBottomAnchor),
         ])
     }
 }

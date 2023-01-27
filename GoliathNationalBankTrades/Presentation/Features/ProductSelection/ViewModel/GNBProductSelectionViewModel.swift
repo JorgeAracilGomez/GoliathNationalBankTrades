@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: GNBProductSelectionViewModel
+
 protocol GNBProductSelectionViewModel: GNBProductSelectionViewModelInput, GNBProductSelectionViewModelOutput {}
 
 protocol GNBProductSelectionViewModelInput {
@@ -18,7 +20,10 @@ protocol GNBProductSelectionViewModelOutput {
     var model: Box<[GNBProductSelectionModel]?> { get }
     var loadingStatus: Box<LoadingStatus?> { get }
     var error: Box<GNBError?> { get }
+    var productDetailModel: Box<GNBProductSelectionModel?> { get }
 }
+
+// MARK: DefaultGNBProductSelectionViewModel
 
 final class DefaultGNBProductSelectionViewModel: GNBProductSelectionViewModel {
     var transactionsUseCase: GNBProductTransactionsUseCase
@@ -26,6 +31,7 @@ final class DefaultGNBProductSelectionViewModel: GNBProductSelectionViewModel {
     var model: Box<[GNBProductSelectionModel]?> = Box(nil)
     var loadingStatus: Box<LoadingStatus?> = Box(nil)
     var error: Box<GNBError?> = Box(nil)
+    var productDetailModel: Box<GNBProductSelectionModel?> = Box(nil)
     
     init(transactionsUseCase: GNBProductTransactionsUseCase = DefaultGNBProductTransactionsUseCase()) {
         self.transactionsUseCase = transactionsUseCase
@@ -41,7 +47,7 @@ extension DefaultGNBProductSelectionViewModel {
     }
     
     func selectCell(atIndex index: Int) {
-        print("TODO: selectCell: \(index)")
+        productDetailModel.value = model.value?[index]
     }
 }
 
@@ -87,7 +93,7 @@ extension DefaultGNBProductSelectionViewModel {
         let productNames = transactions?.compactMap { $0.sku }
         guard let uniqueProducts = productNames?.removingDuplicates().sorted() else {
             let errorMessage = "Could not retrieve unique product keys for create model in GNBProductSelectionViewModel"
-            self.error.value = GNBError.parseError(message: errorMessage)
+            self.createErrorModel(GNBError.parseError(message: errorMessage))
             return []
         }
         

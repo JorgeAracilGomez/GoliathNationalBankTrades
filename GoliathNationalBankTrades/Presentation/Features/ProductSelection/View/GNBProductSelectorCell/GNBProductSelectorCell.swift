@@ -49,6 +49,7 @@ final class GNBProductSelectorCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         self.titleLabel.text = nil
+        self.subtitleLabel.text = nil
     }
 }
 
@@ -110,9 +111,7 @@ extension GNBProductSelectorCell {
         subtitleLabel.textAlignment = .left
         subtitleLabel.textColor = .darkGray
         subtitleLabel.font = Fonts.subtitleLabel
-        subtitleLabel.text = Localizables.subtitleLabel.replacingOccurrences(
-            of: Constants.replacingLabelString,
-            with: String(number))
+        subtitleLabel.text = String(format: Localizables.subtitleLabel, arguments: [String(number)])
         setupSubtitleLabelConstraints()
     }
     

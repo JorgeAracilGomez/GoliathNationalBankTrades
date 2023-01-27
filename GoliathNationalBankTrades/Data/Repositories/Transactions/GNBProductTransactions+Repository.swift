@@ -30,9 +30,13 @@ final class DefaultGNBProductTransactionsRepository: GNBProductTransactionsRepos
             return
         }
 
-        task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+
+        task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
             self.mannageResponse(data: data, response: response, error: error, completion: completion)
-        }
+        })
         
         task?.resume()
     }
@@ -55,11 +59,11 @@ extension DefaultGNBProductTransactionsRepository {
             return
         }
         
-        guard let decodable = try? JSONDecoder().decode([GNBTransactionDecodable].self, from: data) else {
+        guard let decodable = try? JSONDecoder().decode(GNBProductTransactionListDecodable.self, from: data) else {
             completion(.failure(GNBError.decodeError(forDecodable: "GNBProductTransactionListDecodable")))
             return
         }
         
-        completion(.success(GNBProductTransactionListDecodable(transactions: decodable)))
+        completion(.success(decodable))
     }
 }

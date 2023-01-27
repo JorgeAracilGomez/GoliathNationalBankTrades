@@ -81,6 +81,13 @@ extension GNBProductSelectionViewController {
             
             self.showAlert(error: error)
         }
+        
+        viewModel.productDetailModel.bind { [weak self] model in
+            guard let self = self,
+                  let model = model else { return }
+            
+            self.goToProductDetail(withModel: model)
+        }
     }
 }
 
@@ -111,5 +118,14 @@ extension GNBProductSelectionViewController {
         DispatchQueue.main.async {
             self.productsTableView.reloadData()
         }
+    }
+}
+
+// MARK: User Actions
+
+extension GNBProductSelectionViewController {
+ 
+    private func goToProductDetail(withModel model: GNBProductSelectionModel) {
+        coordinator?.showProductDetail(withModel: model)
     }
 }
