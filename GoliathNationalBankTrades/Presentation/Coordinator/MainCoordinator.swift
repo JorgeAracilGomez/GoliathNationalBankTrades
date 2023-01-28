@@ -28,15 +28,30 @@ final class MainCoordinator: Coordinator {
 
 extension MainCoordinator {
     
+    /// This method is responsible for initializing the application.
     func start() {
         let productSelectionViewController = GNBProductSelectionViewController()
         productSelectionViewController.coordinator = self
         navigationController.pushViewController(productSelectionViewController, animated: false)
     }
     
+    /// This method navigates to the Product detail screen.
+    /// - Parameter model: Model that contains the information of the product for which you want to obtain the detail view.
     func showProductDetail(withModel model: GNBProductSelectionModel) {
         let productDetailViewController = GNBProductDetailViewController(inputModel: model)
         productDetailViewController.coordinator = self
         navigationController.pushViewController(productDetailViewController, animated: true)
+    }
+    
+    /// This method shows an error popup of type Alert
+    /// - Parameter error: Model of the error that has occurred
+    func showAlert(error: GNBError?) {
+        let alertTitle = "An error has occurred"
+        let alertDescription = "Please try again in a few moments."
+        let alertButtonText = "Accept"
+        let alertController = UIAlertController(title: alertTitle, message: alertDescription, preferredStyle: .alert)
+        let action = UIAlertAction(title: alertButtonText, style: .default)
+        alertController.addAction(action)
+        navigationController.present(alertController, animated: true)
     }
 }

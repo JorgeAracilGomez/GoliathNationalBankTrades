@@ -77,7 +77,7 @@ extension GNBProductSelectionViewController {
             guard let self = self,
                   let error = error else { return }
             
-            self.showAlert(error: error)
+            self.coordinator?.showAlert(error: error)
         }
         
         viewModel.productDetailModel.bind { [weak self] model in

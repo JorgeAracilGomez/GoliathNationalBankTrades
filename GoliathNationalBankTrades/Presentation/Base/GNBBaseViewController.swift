@@ -37,22 +37,3 @@ extension GNBBaseViewController {
         }
     }
 }
-
-// MARK: Mannage Alert Dialogs
-
-extension GNBBaseViewController {
- 
-    func showAlert(error: GNBError?) {
-        
-        let alertTitle = "Ha ocurrido un error"
-        let alertDescription = "Por favor vuelve a itentarlo en unos momentos."
-        let alertButtonText = "Aceptar"
-        let alertController = UIAlertController(title: alertTitle, message: alertDescription, preferredStyle: .alert)
-        let action = UIAlertAction(title: alertButtonText, style: .default)
-        alertController.addAction(action)
-
-        DispatchQueue.main.async {
-            self.present(alertController, animated: true)
-        }
-    }
-}

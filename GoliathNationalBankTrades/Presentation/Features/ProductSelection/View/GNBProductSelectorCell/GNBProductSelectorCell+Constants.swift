@@ -21,7 +21,7 @@ extension GNBProductSelectorCell {
     }
     
     enum Localizables {
-        static let subtitleLabel = "%@ transacciones realizadas"
+        static let subtitleLabel = "%@ transactions made"
     }
     
     enum Images {
