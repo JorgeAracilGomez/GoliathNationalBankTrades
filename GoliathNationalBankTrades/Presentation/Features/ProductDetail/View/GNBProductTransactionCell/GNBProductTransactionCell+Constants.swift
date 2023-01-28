@@ -22,4 +22,10 @@ extension GNBProductTransactionCell {
     enum Fonts {
         static let primaryLabel = UIFont(name: "Helvetica", size: 20.0)
     }
+    
+    enum AccessibilityIdentifiers {
+        static let originalValueLabel = "GNBProductTransactionCellOriginalValueLabel"
+        static let transactionIcon = "GNBProductTransactionCellIcon"
+        static let convertedValueLabel = "GNBProductTransactionCellConvertedValueLabel"
+    }
 }

@@ -119,6 +119,7 @@ extension GNBProductDetailViewController {
         transactionsTableView.separatorStyle = .singleLine
         transactionsTableView.dataSource = transactionsTableViewDataSource
         transactionsTableView.delegate = nil
+        transactionsTableView.accessibilityIdentifier = AccessibilityIdentifiers.transactionsTableView
         setupTransactionsTableViewConstraints()        
     }
     

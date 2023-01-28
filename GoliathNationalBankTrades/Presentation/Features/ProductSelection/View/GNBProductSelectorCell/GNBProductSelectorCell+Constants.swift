@@ -33,4 +33,11 @@ extension GNBProductSelectorCell {
         static let titleLabel = UIFont(name: "Helvetica-Bold", size: 20.0)
         static let subtitleLabel = UIFont(name: "Helvetica-Light", size: 15)
     }
+    
+    enum AccessibilityIdentifiers {
+        static let transactionIcon = "GNBProductSelectorCellTransactionIcon"
+        static let titleLabel = "GNBProductSelectorCellTitleLabel"
+        static let subtitleLabel = "GNBProductSelectorCellSubitleLabel"
+        static let showDetailIcon = "GNBProductSelectorCellShowDetailIcon"
+    }
 }

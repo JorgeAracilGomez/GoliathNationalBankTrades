@@ -73,6 +73,7 @@ extension GNBProductDetailBalanceView {
         productNameLabel.textColor = .darkGray
         productNameLabel.font = Fonts.primaryLabel
         productNameLabel.text = productName
+        productNameLabel.accessibilityIdentifier = AccessibilityIdentifiers.productNameLabel//"GNBProductDetailBalanceViewNameLabel" // MISCO
         setupProductNameLabelConstraints()
     }
     
@@ -82,6 +83,7 @@ extension GNBProductDetailBalanceView {
         totalBalanceLabel.textColor = .darkGray
         totalBalanceLabel.font = Fonts.primaryLabel
         totalBalanceLabel.text = String(format: Localizables.balanceLabel, arguments: [totalBalance])
+        totalBalanceLabel.accessibilityIdentifier = AccessibilityIdentifiers.totalBalanceLabel//"GNBProductDetailBalanceViewBalanceLabel" // MISCO
         setupTotalBalanceLabelConstraints()
     }
 }

@@ -30,4 +30,9 @@ extension GNBProductDetailBalanceView {
     enum Fonts {
         static let primaryLabel = UIFont.systemFont(ofSize: 25, weight: UIFont.Weight.bold)
     }
+    
+    enum AccessibilityIdentifiers {
+        static let productNameLabel = "GNBProductDetailBalanceViewNameLabel"
+        static let totalBalanceLabel = "GNBProductDetailBalanceViewBalanceLabel"
+    }
 }

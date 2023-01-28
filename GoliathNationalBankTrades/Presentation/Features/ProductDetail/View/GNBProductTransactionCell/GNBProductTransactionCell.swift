@@ -69,6 +69,7 @@ extension GNBProductTransactionCell {
         originalValueLabel.textColor = .black
         originalValueLabel.font = Fonts.primaryLabel
         originalValueLabel.text = model.originalValue
+        originalValueLabel.accessibilityIdentifier = AccessibilityIdentifiers.originalValueLabel
         setupOriginalValueLabelConstraints()
     }
     
@@ -76,6 +77,7 @@ extension GNBProductTransactionCell {
         addSubview(transactionIcon)
         transactionIcon.image = Images.transactionIcon
         transactionIcon.tintColor = .darkGray
+        transactionIcon.accessibilityIdentifier = AccessibilityIdentifiers.transactionIcon
         setupTransactionIconViewConstraints()
     }
     
@@ -86,6 +88,7 @@ extension GNBProductTransactionCell {
         convertedValueLabel.textColor = .black
         convertedValueLabel.font = Fonts.primaryLabel
         convertedValueLabel.text = model.convertedValue
+        convertedValueLabel.accessibilityIdentifier = AccessibilityIdentifiers.convertedValueLabel
         setupConvertedValueLabelConstraints()
     }
 }

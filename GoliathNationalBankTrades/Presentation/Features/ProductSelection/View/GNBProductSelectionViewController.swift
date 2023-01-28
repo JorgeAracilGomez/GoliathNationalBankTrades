@@ -109,6 +109,7 @@ extension GNBProductSelectionViewController {
         productsTableView.separatorStyle = .none
         productsTableView.dataSource = productsTableViewDataSource
         productsTableView.delegate = productsTableViewDelegate
+        productsTableView.accessibilityIdentifier = AccessibilityIdentifiers.productsTableView
         setupProductsTableViewConstraints()
     }
     

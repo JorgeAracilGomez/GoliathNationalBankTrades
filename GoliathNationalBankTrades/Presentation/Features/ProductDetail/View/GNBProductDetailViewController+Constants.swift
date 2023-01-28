@@ -14,4 +14,8 @@ extension GNBProductDetailViewController {
     enum Localizables {
         static let navigationTitle = "Product Detail"
     }
+    
+    enum AccessibilityIdentifiers {
+        static let transactionsTableView = "GNBTransactionsTableView"
+    }
 }

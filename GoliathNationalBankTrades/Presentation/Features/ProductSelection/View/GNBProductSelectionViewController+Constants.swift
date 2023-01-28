@@ -14,4 +14,8 @@ extension GNBProductSelectionViewController {
     enum Localizables {
         static let navigationTitle = "Products available"
     }
+    
+    enum AccessibilityIdentifiers {
+        static let productsTableView = "GNBProductsTableView"
+    }
 }

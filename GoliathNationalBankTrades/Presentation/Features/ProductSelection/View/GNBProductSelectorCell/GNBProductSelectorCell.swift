@@ -23,6 +23,7 @@ final class GNBProductSelectorCell: UITableViewCell {
     private (set) var transactionIcon: UIImageView = {
         let transactionIcon = UIImageView(frame: .zero)
         transactionIcon.translatesAutoresizingMaskIntoConstraints = false
+        transactionIcon.accessibilityIdentifier = AccessibilityIdentifiers.transactionIcon
         return transactionIcon
     }()
     
@@ -30,6 +31,7 @@ final class GNBProductSelectorCell: UITableViewCell {
         let titleLabel = UILabel(frame: .zero)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.numberOfLines = Constants.labelsNumberOfLines
+        titleLabel.accessibilityIdentifier = AccessibilityIdentifiers.titleLabel
         return titleLabel
     }()
     
@@ -37,12 +39,14 @@ final class GNBProductSelectorCell: UITableViewCell {
         let subtitleLabel = UILabel(frame: .zero)
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.numberOfLines = Constants.labelsNumberOfLines
+        subtitleLabel.accessibilityIdentifier = AccessibilityIdentifiers.subtitleLabel
         return subtitleLabel
     }()
     
     private (set) var showDetailIcon: UIImageView = {
         let showDetailIcon = UIImageView(frame: .zero)
         showDetailIcon.translatesAutoresizingMaskIntoConstraints = false
+        showDetailIcon.accessibilityIdentifier = AccessibilityIdentifiers.showDetailIcon
         return showDetailIcon
     }()
     
