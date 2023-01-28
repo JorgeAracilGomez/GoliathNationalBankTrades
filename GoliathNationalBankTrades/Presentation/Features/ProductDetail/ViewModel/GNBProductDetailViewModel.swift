@@ -86,7 +86,7 @@ extension DefaultGNBProductDetailViewModel {
         
         if error.value == nil {
             self.model.value = GNBProductDetailModel(sku: inputModel.sku,
-                                                     totalBalance: totalBalance.formatAmountNumberToString(wihCurrency: "EUR"),
+                                                     totalBalance: totalBalance.formatAmountNumberToString(wihCurrency: GNBCurrencyEntity.EUR.rawValue),
                                                      transactions: transactionsConvertedToEUR)
         }
     }
@@ -95,7 +95,7 @@ extension DefaultGNBProductDetailViewModel {
     /// - Parameter transactions: Array value of all of the transactions.
     /// - Returns: Double value  for the total balance after the currency conversion
     func getTransactionsTotalBalance(for transactions: [GNBTransactionEntity]) -> Double {
-        let totalBalance = transactions.reduce(0) { $0 + getCurrencyEURConversionFor($1) }
+        let totalBalance = transactions.reduce(0) { $0 + getAmountWithCurrencyEURConversion(for: $1) }
         return totalBalance
     }
     
@@ -105,10 +105,10 @@ extension DefaultGNBProductDetailViewModel {
     func getTransactionsWithEURCurrencyConvertedModel(for transactions: [GNBTransactionEntity]) -> [GNBTransactionCurrencyConversionModel]  {
         let transactionsConverted = transactions.compactMap { transaction in
             if let amount = transaction.amount, let currency = transaction.currency {
-                let convertedAmount = getCurrencyEURConversionFor(transaction)
+                let convertedAmount = getAmountWithCurrencyEURConversion(for: transaction)
                 return GNBTransactionCurrencyConversionModel(
-                    originalValue: amount.formatAmountNumberToString(wihCurrency: currency),
-                    convertedValue: convertedAmount.formatAmountNumberToString(wihCurrency: "EUR"))
+                    originalValue: amount.formatAmountNumberToString(wihCurrency: currency.rawValue),
+                    convertedValue: convertedAmount.formatAmountNumberToString(wihCurrency: GNBCurrencyEntity.EUR.rawValue))
             }
             
             return nil
@@ -120,7 +120,7 @@ extension DefaultGNBProductDetailViewModel {
     /// This method conver ain input pair of amount-currency to a new value for converted to EUR currency amount
     /// - Parameter transaction: Value of the transaction that you want to convert to EUR
     /// - Returns: Amount value converted to EUR
-    func getCurrencyEURConversionFor(_ transaction: GNBTransactionEntity) -> Double {
+    func getAmountWithCurrencyEURConversion(for transaction: GNBTransactionEntity) -> Double {
         guard let inputCurrency = transaction.currency,
               let currentRates = entity?.rates,
               let currentAmount = transaction.amount else {
@@ -130,7 +130,7 @@ extension DefaultGNBProductDetailViewModel {
             return 0
         }
         
-        let currencyConversionRate = getCurrencyConversion(for: inputCurrency, to: "EUR", rates: currentRates)
+        let currencyConversionRate = getCurrencyConversionRate(for: inputCurrency, to: .EUR, rates: currentRates)
         return currentAmount * currencyConversionRate
     }
 
@@ -141,7 +141,7 @@ extension DefaultGNBProductDetailViewModel {
     ///   - outputCurrency: The final currency for the conversion
     ///   - rates: Available currency conversions
     /// - Returns: Double value for the intut-output currency conversion
-    func getCurrencyConversion(for inputCurrency: String, to outputCurrency: String, rates: [GNBCurrencyRatesEntity]?) -> Double {
+    func getCurrencyConversionRate(for inputCurrency: GNBCurrencyEntity, to outputCurrency: GNBCurrencyEntity, rates: [GNBCurrencyRatesEntity]?) -> Double {
 
         if inputCurrency == outputCurrency { return 1.0 }
         
@@ -157,7 +157,7 @@ extension DefaultGNBProductDetailViewModel {
         
         var acumulatedRateConversion = availableRate
         if availableConversion.to != outputCurrency {
-            acumulatedRateConversion *= getCurrencyConversion(for: iterationCurrency, to: outputCurrency, rates: rates)
+            acumulatedRateConversion *= getCurrencyConversionRate(for: iterationCurrency, to: outputCurrency, rates: rates)
         }
         
         return acumulatedRateConversion

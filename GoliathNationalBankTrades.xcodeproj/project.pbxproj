@@ -72,6 +72,7 @@
 		9634F50A2983F956004AA66F /* GNBProductSelectionViewModel+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5092983F956004AA66F /* GNBProductSelectionViewModel+Test.swift */; };
 		9634F50D2984183E004AA66F /* GNBProductDetailViewModel+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F50C2984183E004AA66F /* GNBProductDetailViewModel+Test.swift */; };
 		9634F5102985BBE9004AA66F /* GNBHappyPath+UITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F50F2985BBE9004AA66F /* GNBHappyPath+UITest.swift */; };
+		9634F5122985D77B004AA66F /* GNBCurrency+Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5112985D77B004AA66F /* GNBCurrency+Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		9634F5092983F956004AA66F /* GNBProductSelectionViewModel+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductSelectionViewModel+Test.swift"; sourceTree = "<group>"; };
 		9634F50C2984183E004AA66F /* GNBProductDetailViewModel+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductDetailViewModel+Test.swift"; sourceTree = "<group>"; };
 		9634F50F2985BBE9004AA66F /* GNBHappyPath+UITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBHappyPath+UITest.swift"; sourceTree = "<group>"; };
+		9634F5112985D77B004AA66F /* GNBCurrency+Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrency+Entity.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +324,7 @@
 		9634F48129807447004AA66F /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				9634F5112985D77B004AA66F /* GNBCurrency+Entity.swift */,
 				9634F48F2981A0B5004AA66F /* Transactions */,
 				9634F4E929833542004AA66F /* CurrencyRates */,
 			);
@@ -770,6 +773,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9634F4A22981E317004AA66F /* GNBProductSelectorCell.swift in Sources */,
+				9634F5122985D77B004AA66F /* GNBCurrency+Entity.swift in Sources */,
 				9634F4882981998F004AA66F /* GNBProductTransactions+Repository.swift in Sources */,
 				9634F48029807294004AA66F /* GNBProductTransactionList+Decodable.swift in Sources */,
 				9634F4B22982850D004AA66F /* GNBSpinnerViewController+Constraints.swift in Sources */,

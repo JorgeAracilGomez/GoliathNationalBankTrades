@@ -15,11 +15,12 @@ struct GNBTransactionEntity {
     /// Total amount of the transaction
     var amount: Double?
     /// Representation of the currency used in the transaction
-    var currency: String?
+    var currency: GNBCurrencyEntity?
     
     init(decodable: GNBTransactionDecodable) {
         self.sku = decodable.sku
         self.amount = decodable.amount
-        self.currency = decodable.currency
+//        self.currency = decodable.currency
+        if let decodableCurrency = decodable.currency { self.currency = GNBCurrencyEntity(stringValue: decodableCurrency) }
     }
 }
