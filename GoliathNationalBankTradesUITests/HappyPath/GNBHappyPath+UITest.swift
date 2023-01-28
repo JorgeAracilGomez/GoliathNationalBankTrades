@@ -68,7 +68,7 @@ final class GNBHappyPathUITests: XCTestCase {
         topProductCell.tap()
         
         let productDetailNavigationBarTitle = app.navigationBars.children(matching: .staticText).firstMatch
-        XCTAssert(productDetailNavigationBarTitle.exists)
+        XCTAssert(productDetailNavigationBarTitle.waitForExistence(timeout: 5.0))
         
         let productDetailNameLabel = app.staticTexts.matching(identifier: "GNBProductDetailBalanceViewNameLabel").firstMatch
         let productDetailTotalBalenceLabel = app.staticTexts.matching(identifier: "GNBProductDetailBalanceViewBalanceLabel").firstMatch
@@ -81,7 +81,7 @@ final class GNBHappyPathUITests: XCTestCase {
         let numberOfTransactionIconInTransactionsCells = app.images.matching(identifier: "GNBProductTransactionCellIcon").count
         let numberOfConvertedLabelInTransactionsCells = app.staticTexts.matching(identifier: "GNBProductTransactionCellConvertedValueLabel").count
         
-        XCTAssert(transactionsTable.waitForExistence(timeout: 5.0))
+        XCTAssert(transactionsTable.exists)
         XCTAssertEqual(numberOfCellsInTransactionsTableView, numberOfOriginalLabelInTransactionsCells)
         XCTAssertEqual(numberOfCellsInTransactionsTableView, numberOfTransactionIconInTransactionsCells)
         XCTAssertEqual(numberOfCellsInTransactionsTableView, numberOfConvertedLabelInTransactionsCells)
