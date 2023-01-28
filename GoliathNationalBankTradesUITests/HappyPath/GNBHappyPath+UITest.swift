@@ -80,6 +80,7 @@ final class GNBHappyPathUITests: XCTestCase {
         let numberOfOriginalLabelInTransactionsCells = app.staticTexts.matching(identifier: "GNBProductTransactionCellOriginalValueLabel").count
         let numberOfTransactionIconInTransactionsCells = app.images.matching(identifier: "GNBProductTransactionCellIcon").count
         let numberOfConvertedLabelInTransactionsCells = app.staticTexts.matching(identifier: "GNBProductTransactionCellConvertedValueLabel").count
+        
         XCTAssert(transactionsTable.waitForExistence(timeout: 5.0))
         XCTAssertEqual(numberOfCellsInTransactionsTableView, numberOfOriginalLabelInTransactionsCells)
         XCTAssertEqual(numberOfCellsInTransactionsTableView, numberOfTransactionIconInTransactionsCells)
