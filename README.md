@@ -32,3 +32,7 @@ Presentation Pattern.
 
 ### Dependency injection.
 Implementation of dependency injection to simplify testing.
+
+
+## Testing
+UnitTest and UITest have been included with a coverage of more than 90% of the project
