@@ -23,10 +23,12 @@ class GNBBaseViewController: UIViewController {
 extension GNBBaseViewController {
     
     func showSpinner() {
-        addChild(child)
-        child.view.frame = view.frame
-        view.addSubview(child.view)
-        child.didMove(toParent: self)
+        DispatchQueue.main.async {
+            self.addChild(self.child)
+            self.child.view.frame = self.view.frame
+            self.view.addSubview(self.child.view)
+            self.child.didMove(toParent: self)
+        }
     }
     
     func hideSpinner() {
