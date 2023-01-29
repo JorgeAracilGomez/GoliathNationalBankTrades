@@ -1,6 +1,7 @@
 # GoliathNationalBankTrades
 
 Sample iOS application to display bank transactions developed in swift.
+
 An implementation of the MVVM + Clean architecture (Swift).
 
 
@@ -17,9 +18,9 @@ Having an example project, for reference.
 ## Patterns
 This project uses different patterns for its implementation, in a classic clean architecture.
 
-Presentation for view layer (MVVM pattern).
-Domain for business logic layer.
-Data for data layer (Repos, CoreData, Local Files…)
+- Presentation for view layer (MVVM pattern).
+- Domain for business logic layer.
+- Data for data layer (Repos, CoreData, Local Files…)
 
 ### Coordinator 
 Its responsibility is to show a new view, in this way we free the viewModel from managing the views and we also centralize them all by scenes.
