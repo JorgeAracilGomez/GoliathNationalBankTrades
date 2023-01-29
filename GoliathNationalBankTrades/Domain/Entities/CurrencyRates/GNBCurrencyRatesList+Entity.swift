@@ -9,6 +9,7 @@ import Foundation
 
 struct GNBCurrencyRatesListEntity {
     
+    /// Array representation for all the conversion rates
     var rates: [GNBCurrencyRatesEntity]?
     
     init(decodable: GNBCurrencyRatesListDecodable) {

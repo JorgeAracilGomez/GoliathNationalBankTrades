@@ -7,7 +7,6 @@
 
 import Foundation
 
-/// Data model that represents a transaction of a specific product for a specific sale value and in a specific currency.
 struct GNBTransactionEntity {
     
     /// Transaction product code
@@ -20,7 +19,6 @@ struct GNBTransactionEntity {
     init(decodable: GNBTransactionDecodable) {
         self.sku = decodable.sku
         self.amount = decodable.amount
-//        self.currency = decodable.currency
         if let decodableCurrency = decodable.currency { self.currency = GNBCurrencyEntity(stringValue: decodableCurrency) }
     }
 }

@@ -9,6 +9,8 @@ import Foundation
 
 enum GNBCurrencyEntity: Equatable {
     
+    /// Representation for all the currency available cases
+    /// If there is an unknown case, it will be Other type and save the string value for that currency.
     case EUR, USD, GBP, JPY, AUD, CAD, SEK, RUB, INR
     case other(value: String)
     
@@ -36,7 +38,8 @@ enum GNBCurrencyEntity: Equatable {
             self = .other(value: stringValue)
         }
     }
-            
+    
+    /// Return the String representation for all the Entity cases
     var rawValue: String {
         get {
             switch self {
@@ -48,6 +51,7 @@ enum GNBCurrencyEntity: Equatable {
         }
     }
     
+    /// Equatable method for allow the Other case values
     static func == (lhs: GNBCurrencyEntity, rhs: GNBCurrencyEntity) -> Bool {
         lhs.rawValue == rhs.rawValue
     }

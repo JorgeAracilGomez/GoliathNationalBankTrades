@@ -7,9 +7,16 @@
 
 import Foundation
 
+// MARK: GNBProductTransactionsUseCase
+
 protocol GNBProductTransactionsUseCase {
+    
+    /// Method that fetch the product transactions
+    /// - Parameter completion: Returns a products transactions list Entity or an error.
     func execute(completion: @escaping (Result<GNBProductTransactionListEntity, GNBError>) -> Void)
 }
+
+// MARK: DefaultGNBProductTransactionsUseCase
 
 final class DefaultGNBProductTransactionsUseCase: GNBProductTransactionsUseCase {
     
