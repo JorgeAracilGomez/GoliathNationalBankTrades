@@ -60,7 +60,6 @@
 		9634F4E6298334C8004AA66F /* GNBCurrencyRatesList+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4E5298334C8004AA66F /* GNBCurrencyRatesList+Decodable.swift */; };
 		9634F4E829833536004AA66F /* GNBCurrencyRatesList+Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4E729833536004AA66F /* GNBCurrencyRatesList+Entity.swift */; };
 		9634F4ED298335D5004AA66F /* GNBCurrencyRates+UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4EC298335D5004AA66F /* GNBCurrencyRates+UseCase.swift */; };
-		9634F4F129835396004AA66F /* Double+FormatNumberToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4F029835396004AA66F /* Double+FormatNumberToString.swift */; };
 		9634F4F42983D849004AA66F /* GNBCurrencyRatesUseCase+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4F32983D849004AA66F /* GNBCurrencyRatesUseCase+Test.swift */; };
 		9634F4F82983D90F004AA66F /* GNBCurrencyRatesRepositorySuccess+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4F72983D90F004AA66F /* GNBCurrencyRatesRepositorySuccess+Mock.swift */; };
 		9634F4FB2983D9EA004AA66F /* GNBProductTransactionList+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F4FA2983D9EA004AA66F /* GNBProductTransactionList+Mock.swift */; };
@@ -73,6 +72,7 @@
 		9634F50D2984183E004AA66F /* GNBProductDetailViewModel+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F50C2984183E004AA66F /* GNBProductDetailViewModel+Test.swift */; };
 		9634F5102985BBE9004AA66F /* GNBHappyPath+UITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F50F2985BBE9004AA66F /* GNBHappyPath+UITest.swift */; };
 		9634F5122985D77B004AA66F /* GNBCurrency+Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5112985D77B004AA66F /* GNBCurrency+Entity.swift */; };
+		9634F5142986FC89004AA66F /* Double+FormatNumberToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9634F5132986FC89004AA66F /* Double+FormatNumberToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,7 +150,6 @@
 		9634F4E5298334C8004AA66F /* GNBCurrencyRatesList+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrencyRatesList+Decodable.swift"; sourceTree = "<group>"; };
 		9634F4E729833536004AA66F /* GNBCurrencyRatesList+Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrencyRatesList+Entity.swift"; sourceTree = "<group>"; };
 		9634F4EC298335D5004AA66F /* GNBCurrencyRates+UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrencyRates+UseCase.swift"; sourceTree = "<group>"; };
-		9634F4F029835396004AA66F /* Double+FormatNumberToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Double+FormatNumberToString.swift"; path = "../../../../../../Desktop/Double+FormatNumberToString.swift"; sourceTree = "<group>"; };
 		9634F4F32983D849004AA66F /* GNBCurrencyRatesUseCase+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrencyRatesUseCase+Test.swift"; sourceTree = "<group>"; };
 		9634F4F72983D90F004AA66F /* GNBCurrencyRatesRepositorySuccess+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrencyRatesRepositorySuccess+Mock.swift"; sourceTree = "<group>"; };
 		9634F4FA2983D9EA004AA66F /* GNBProductTransactionList+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductTransactionList+Mock.swift"; sourceTree = "<group>"; };
@@ -163,6 +162,7 @@
 		9634F50C2984183E004AA66F /* GNBProductDetailViewModel+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBProductDetailViewModel+Test.swift"; sourceTree = "<group>"; };
 		9634F50F2985BBE9004AA66F /* GNBHappyPath+UITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBHappyPath+UITest.swift"; sourceTree = "<group>"; };
 		9634F5112985D77B004AA66F /* GNBCurrency+Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNBCurrency+Entity.swift"; sourceTree = "<group>"; };
+		9634F5132986FC89004AA66F /* Double+FormatNumberToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+FormatNumberToString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,7 +448,7 @@
 			children = (
 				9634F4B72982A08C004AA66F /* UIView+SafeAnchor.swift */,
 				9634F4B92982A0D9004AA66F /* Array+RemoveDuplicates.swift */,
-				9634F4F029835396004AA66F /* Double+FormatNumberToString.swift */,
+				9634F5132986FC89004AA66F /* Double+FormatNumberToString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -802,6 +802,7 @@
 				9634F4E829833536004AA66F /* GNBCurrencyRatesList+Entity.swift in Sources */,
 				9634F49D2981C135004AA66F /* GNBProductSelectionViewController+Datasource.swift in Sources */,
 				9634F4B82982A08C004AA66F /* UIView+SafeAnchor.swift in Sources */,
+				9634F5142986FC89004AA66F /* Double+FormatNumberToString.swift in Sources */,
 				9634F47B29806C64004AA66F /* GNBEndpoint.swift in Sources */,
 				9634F4852980746D004AA66F /* GNBProductTransactionList+Entity.swift in Sources */,
 				9634F4442980584B004AA66F /* SceneDelegate.swift in Sources */,
@@ -816,7 +817,6 @@
 				9634F4DD29830FB2004AA66F /* GNBProductDetailBalanceView+Constraints.swift in Sources */,
 				9634F4AD2982826C004AA66F /* LoadingStatus.swift in Sources */,
 				9634F49B2981C12A004AA66F /* GNBProductSelectionViewController+Delegate.swift in Sources */,
-				9634F4F129835396004AA66F /* Double+FormatNumberToString.swift in Sources */,
 				9634F4D52982E66D004AA66F /* GNBProductTransactionCell.swift in Sources */,
 				9634F4972981BBE1004AA66F /* GNBProductSelectionViewModel.swift in Sources */,
 				9634F4C82982C873004AA66F /* GNBProductDetailViewModel.swift in Sources */,
