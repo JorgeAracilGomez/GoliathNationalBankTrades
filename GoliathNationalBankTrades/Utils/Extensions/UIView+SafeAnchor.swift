@@ -7,7 +7,6 @@
 
 import UIKit
 
-/// This extension controls the margins of the UIView depending on whether or not it accepts safeAreaLayoutGuide
 extension UIView {
   
     /// This method returns the top margin based on whether or not the device accepts the safeAreaLayoutGuide
