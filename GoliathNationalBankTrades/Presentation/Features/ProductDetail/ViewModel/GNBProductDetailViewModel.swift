@@ -11,10 +11,12 @@ import Foundation
 
 protocol GNBProductDetailViewModel: GNBProductDetailViewModelInput, GNBProductDetailViewModelOutput {}
 
+/// This protocol defines the input methods that the ViewModel accepts for communication between the View-ViewModel.
 protocol GNBProductDetailViewModelInput {
     func viewDidLoad(forInputModel inputModel: GNBProductSelectionModel?)
 }
 
+/// This protocol defines the output Box variables that the ViewModel uses for communication between the ViewModel-View.
 protocol GNBProductDetailViewModelOutput {
     var inputModel: GNBProductSelectionModel? { get }
     var model: Box<GNBProductDetailModel?> { get }

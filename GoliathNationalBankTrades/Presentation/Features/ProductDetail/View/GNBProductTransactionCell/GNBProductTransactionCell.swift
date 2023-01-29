@@ -41,7 +41,7 @@ final class GNBProductTransactionCell: UITableViewCell {
     }
 }
 
-// MARK: GNBProductTransactionCell - Public Methods
+// MARK: Public Methods
 
 extension GNBProductTransactionCell {
     
@@ -51,7 +51,7 @@ extension GNBProductTransactionCell {
     }
 }
 
-// MARK: GNBProductSelectorCell - SetupView
+// MARK: SetupView
 
 extension GNBProductTransactionCell {
     

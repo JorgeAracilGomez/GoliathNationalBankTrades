@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: GNBProductDetailBalanceView - Constraints
+
 extension GNBProductDetailBalanceView {
     
     private enum Constraints {
