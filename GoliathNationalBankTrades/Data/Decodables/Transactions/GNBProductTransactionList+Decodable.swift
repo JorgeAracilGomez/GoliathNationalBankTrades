@@ -7,7 +7,6 @@
 
 import Foundation
 
-/// Data model that represents a list of all the transactions made.
 struct GNBProductTransactionListDecodable: Codable {
     
     /// Array representation for all the transactions

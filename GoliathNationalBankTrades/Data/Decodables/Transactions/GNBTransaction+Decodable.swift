@@ -7,7 +7,6 @@
 
 import Foundation
 
-/// Data model that represents a transaction of a specific product for a specific sale value and in a specific currency.
 struct GNBTransactionDecodable: Codable {
     
     /// Transaction product code

@@ -10,6 +10,9 @@ import Foundation
 // MARK: GNBCurrencyRatesRepository Protocol
 
 protocol GNBCurrencyRatesRepository {
+    
+    /// Method that fetch all the currency rates available
+    /// - Parameter completion: Returns s currency rates list Decodable or an error.
     func getConversionRates(completion: @escaping (Result<GNBCurrencyRatesListDecodable, GNBError>) -> Void)
 }
 

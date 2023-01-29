@@ -10,6 +10,9 @@ import Foundation
 // MARK: GNBProductTransactionsRepository Protocol
 
 protocol GNBProductTransactionsRepository {
+    
+    /// Method that fetch the product transactions
+    /// - Parameter completion: Returns a products transactions list Decodable or an error.
     func getTransactions(completion: @escaping (Result<GNBProductTransactionListDecodable, GNBError>) -> Void)
 }
 

@@ -9,6 +9,7 @@ import Foundation
 
 struct GNBCurrencyRatesListDecodable: Codable {
     
+    /// Array representation for all the currency rates
     var rates: [GNBCurrencyRatesDecodable]?
     
     /// Decodes the info for non-primaryKey response json data.

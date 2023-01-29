@@ -7,7 +7,6 @@
 
 import Foundation
 
-/// Data model representing the exchange rate between two specific currencies
 struct GNBCurrencyRatesDecodable: Codable {
     
     /// Current currency unit representation
