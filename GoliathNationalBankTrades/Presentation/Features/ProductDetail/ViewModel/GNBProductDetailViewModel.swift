@@ -16,7 +16,7 @@ protocol GNBProductDetailViewModelInput {
     func viewDidLoad(forInputModel inputModel: GNBProductSelectionModel?)
 }
 
-/// This protocol defines the output Box variables that the ViewModel uses for communication between the ViewModel-View.
+/// This protocol defines the output getter Box variables that the ViewModel uses for communication between the ViewModel-View.
 protocol GNBProductDetailViewModelOutput {
     var inputModel: GNBProductSelectionModel? { get }
     var model: Box<GNBProductDetailModel?> { get }
