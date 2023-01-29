@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: CellIdentifiers
+// MARK: GNBProductSelection - TableViewDatasource - CellIdentifiers
 
 extension GNBProductSelectionTableViewDatasource {
     enum CellIdentifiers {

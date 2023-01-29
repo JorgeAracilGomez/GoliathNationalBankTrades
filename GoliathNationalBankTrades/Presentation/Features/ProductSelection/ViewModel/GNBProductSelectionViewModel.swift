@@ -11,11 +11,13 @@ import Foundation
 
 protocol GNBProductSelectionViewModel: GNBProductSelectionViewModelInput, GNBProductSelectionViewModelOutput {}
 
+/// This protocol defines the input methods that the ViewModel accepts for communication between the View-ViewModel.
 protocol GNBProductSelectionViewModelInput {
     func viewDidLoad()
     func selectCell(atIndex index: Int)
 }
 
+/// This protocol defines the output getter Box variables that the ViewModel uses for communication between the ViewModel-View.
 protocol GNBProductSelectionViewModelOutput {
     var model: Box<[GNBProductSelectionModel]?> { get }
     var loadingStatus: Box<LoadingStatus?> { get }
@@ -89,6 +91,9 @@ extension DefaultGNBProductSelectionViewModel {
         self.model.value = transactions
     }
     
+    /// This method creates an array of Strings containing the unique keys for the product SKU for a given list of transactions.
+    /// - Parameter transactions: Array containing all transactions made for all products.
+    /// - Returns: Array of Strings containing the unique keys for the product SKU.
     func getUniqueProductsSKU(forTransactions transactions: [GNBTransactionEntity]?) -> [String] {
         let productNames = transactions?.compactMap { $0.sku }
         guard let uniqueProducts = productNames?.removingDuplicates().sorted() else {
@@ -100,11 +105,18 @@ extension DefaultGNBProductSelectionViewModel {
         return uniqueProducts
     }
     
+    /// This method filters a list of transactions for a product key, returning only transactions made for that product key.
+    /// - Parameters:
+    ///   - product: String representation of the product for filter Key.
+    ///   - model: Model that contains a list of all transactions made for all products.
+    /// - Returns: Array representation for all of the transactions made for the given product key.
     func filterTransactionsFor(product: String, in model: GNBProductTransactionListEntity) -> [GNBTransactionEntity] {
         guard let transactions = model.transactions else { return [] }
         return transactions.filter({ $0.sku == product })
     }
     
+    /// This method inflates an error model for data binding with the viewController
+    /// - Parameter error: Value of the error occurred
     func createErrorModel(_ error: GNBError) {
         self.error.value = error
     }

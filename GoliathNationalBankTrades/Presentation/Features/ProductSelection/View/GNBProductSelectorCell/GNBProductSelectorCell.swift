@@ -57,7 +57,7 @@ final class GNBProductSelectorCell: UITableViewCell {
     }
 }
 
-// MARK: GNBProductSelectorCell - Public Methods
+// MARK: Public Methods
 
 extension GNBProductSelectorCell {
     
@@ -68,7 +68,7 @@ extension GNBProductSelectorCell {
     }
 }
 
-// MARK: GNBProductSelectorCell - SetupView
+// MARK: SetupView
 
 extension GNBProductSelectorCell {
     
