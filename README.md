@@ -4,7 +4,6 @@ Sample iOS application to display bank transactions developed in swift.
 
 An implementation of the MVVM + Clean architecture (Swift).
 
-
 ## Motivation
 Having an example project, for reference.
 
@@ -37,3 +36,7 @@ Implementation of dependency injection to simplify testing.
 
 ## Testing
 UnitTest and UITest have been included with a coverage of more than 90% of the project
+
+![image_testing](https://drive.google.com/uc?export=view&id=1Ats4DrF5aA53CnzTa9duiegcZfmO1CpI)
+
+
